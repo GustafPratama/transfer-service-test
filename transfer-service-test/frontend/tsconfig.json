@@ -1,0 +1,9 @@
+{
+    "target": "ESNext",
+    "module": "ESNext",
+    "jsx": "react-jsx",
+    "moduleResolution": "node"
+  }
+cat > transfer-service-test/frontend/src/hooks/useApi.ts <<'EOF'
+export const useApi = () => {
+};

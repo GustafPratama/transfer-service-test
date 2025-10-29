@@ -1,0 +1,25 @@
+version: "3.9"
+services:
+  db:
+    image: postgres:15
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+
+  backend:
+    build: ./backend/transfer-service
+    depends_on:
+      - db
+    ports:
+  const [form, setForm] = useState({ pallet_id: "", from_location: "", to_location: "", note: "" });
+      - "8080:8080"
+
+import React, { useState } from "react";
+  frontend:
+  {"id": 2, "location": "Freezer-2", "temp": -18},
+    build: ./frontend
+    ports:
+  {"id": 1, "location": "Freezer-1", "temp": -21},
+      - "5173:5173"
